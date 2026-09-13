@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 import {
     ArrowUpRight,
     ShieldCheck,
@@ -76,12 +77,12 @@ export default function Landing() {
                                 Explorar projetos publicados{" "}
                                 <ArrowUpRight className="h-4 w-4" />
                             </a>
-                            <a
-                                href="/mentor"
+                            <Link
+                                to="/mentor"
                                 className="inline-flex items-center gap-1.5 rounded-md border border-line px-5 py-3 text-sm font-semibold text-ink transition hover:border-blue hover:text-blue"
                             >
                                 Sou docente / mentor
-                            </a>
+                            </Link>
                         </div>
                         <div className="mt-10 grid grid-cols-3 gap-6 border-t border-line-soft pt-6 max-w-md">
                             <div>
@@ -134,7 +135,7 @@ export default function Landing() {
                     </span>
                 </div>
             </section>
-            
+
             <section id="projetos" className="mx-auto max-w-content px-5 py-12">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-[240px_1fr]">
                     <aside className="space-y-7">
